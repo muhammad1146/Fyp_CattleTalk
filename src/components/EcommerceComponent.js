@@ -1,31 +1,32 @@
 import React from 'react'
-import { Card, Container } from 'react-bootstrap'
-
-const EcommerceComponent = () => {
+import { Card } from 'react-bootstrap';
+import {Link} from 'react-router-dom'
+const EcommerceComponent = ({cattle}) => {
+    
     return (
-        <>
+        
             
-            <Card className='my-3 p-3 rounded'>
-            <a href='/animal' > 
-            <Card.Img src='' variant='top' alt='Animal Image'/>
-            </a>
-            <a href='/animal' > 
-            <Card.Title  as= 'div' > 
-            Animal Name
+            <Card className='my-3 p-3 rounded' flush>
+            
+            <Link to={`/animals/${cattle.id}`} > 
+            <Card.Img src={cattle.image[0]} 
+            variant='top' alt='Animal Image' fluid 
+            className='Cattle_Img_Container'/>
+            </Link>
+            
+            <Link to={`/animals/${cattle.id}`}> 
+            <Card.Title  fkush > 
+            {cattle.cattle_type}
             </Card.Title>
-            </a>
-            <Card.Text as='div'>
-           <div className='my-3 py-2'>
-               Description:
-               </div> 
-            </Card.Text>
+            </Link>
+            
             <Card.Text as='h3'>
-                Price:
+              Rs:{cattle.price}
             </Card.Text>
             </Card>
 
             
-        </>
+        
     )
 }
 

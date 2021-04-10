@@ -5,20 +5,19 @@ const QuestionComponent = () => {
     const state = 1;
     if (state===1){
         return (
-            <Container fluid className='border rounded bg-gray'>
-    <Row className='bg-secondary p-1 m-2 rounded bg-gray'>
-            <Col lg='2' className=' '>
+            <Container fluid className='border rounded grey'>
+    <Row className='bg-secondary p-1 m-2 rounded bg-warning'>
+            <Col lg='2' className='mh-100'>
                 <Row>
-                <Col className='h-100'>
-                <Card className='h-100 mt-3'>
+                <Col className='mh-100'>
+                <Card className='mh-100 mt-3'>
                   <Card.Body>
-                      <Card.Text as = 'div' className='my-2 py-2'>
-
+                      <Card.Text as = 'div' className='my-2 py-2 mh-100'>
+<span> 0 </span>
                     Votes
                       </Card.Text>
                       <Card.Text as = 'div' >
-
-                Answers
+                      <span>0 </span>Answer
                       </Card.Text>
                     
                       </Card.Body>  

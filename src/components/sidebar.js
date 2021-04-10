@@ -6,7 +6,7 @@ import { AiFillHome } from "react-icons/ai";
 import { FaUsers,FaQuestionCircle,FaTags } from "react-icons/fa";
 import { CgProfile } from "react-icons/cg";
 import { RiQuestionAnswerFill } from "react-icons/ri";
-import {Nav,Dropdown,Card,Accordion,Button} from 'react-bootstrap'
+import {Nav,Card,Accordion} from 'react-bootstrap'
 
 const sidebar = () => {
  
@@ -59,7 +59,7 @@ const sidebar = () => {
                     </Nav.Item>
                       <Nav.Item className='' > 
                       <Nav.Link> 
-                          <Link to="/unanswered">
+                          <Link to="/unanswered" className='p-0'>
                             <RiQuestionAnswerFill size='1.1rem'/>Unanswered
                           </Link>
                         </Nav.Link>
